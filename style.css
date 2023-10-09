@@ -1,0 +1,20 @@
+body {
+    background-color: aqua;
+}
+.satu {
+    width: 300px;
+    height: 300px;
+    /* background-color: rgba(242, 39, 39, 0.45); */
+    background-color: hsla(0, 83%, 55%, 0.6);
+    /* border-radius: 0% 0% 50% 50%; */
+    /* opacity: 0.5; */
+    position: relative;
+}
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(32, 8, 212);
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+}
