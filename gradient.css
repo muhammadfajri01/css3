@@ -1,0 +1,11 @@
+body {
+    background-color: aqua;
+}
+div {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    /* background: linear-gradient(90deg,red,white,blue); */
+    /* background: linear-gradient(to left top,red,white,blue); */
+    background: linear-gradient(to bottom,red 50%,white 50%);
+}
