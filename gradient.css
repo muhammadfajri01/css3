@@ -1,11 +1,21 @@
 body {
     background-color: aqua;
+    background-image: radial-gradient(circle farthest-corner at right bottom,red 30%,blue);
 }
-div {
+.satu {
     width: 600px;
     height: 300px;
     margin: 50px auto;
     /* background: linear-gradient(90deg,red,white,blue); */
     /* background: linear-gradient(to left top,red,white,blue); */
     background: linear-gradient(to bottom,red 50%,white 50%);
+}
+
+.dua {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    /* background: linear-gradient(90deg,red,white,blue); */
+    /* background: linear-gradient(to left top,red,white,blue); */
+    background-image: radial-gradient(red 50%,white 50%);
 }
