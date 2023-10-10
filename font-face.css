@@ -1,0 +1,18 @@
+@font-face {
+    font-family: kaushan;
+    src: url(font/KaushanScript-Regular.otf) format('truetype');
+}
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+div {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 5px rgb(69, 64, 64);
+    font-family: kaushan_scriptregular,kaushan;
+}
