@@ -1,20 +1,72 @@
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('font/kaushanscript-regular-webfont.woff2') format('woff2'),
+        url('font/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
-    background-color: aqua;
+    text-align: center;
+    font-family: 'kaushan_scriptregular';
 }
+
 .satu {
-    width: 300px;
-    height: 300px;
-    /* background-color: rgba(242, 39, 39, 0.45); */
-    background-color: hsla(0, 83%, 55%, 0.6);
-    /* border-radius: 0% 0% 50% 50%; */
-    /* opacity: 0.5; */
-    position: relative;
+    font-size: 30px;
+    margin-bottom: -20px;
 }
-.dua {
+
+img {
+    width: 600px;
+    height: 300px;
+    filter: blur(5px) grayscale(100%) drop-shadow(5px 5px 20px black);
+    transition: 1s;
+}
+
+img:hover {
+    filter: blur(0px) grayscale(0%) drop-shadow(5px 5px 20px black);
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    border: 5px solid black;
+}
+
+.kotak {
     width: 100px;
     height: 100px;
-    background-color: rgb(32, 8, 212);
-    position: absolute;
-    right: -50px;
-    bottom: -50px;
+    background-color: blueviolet;
+    /* animation: animakotak 2s ease infinite alternate forwards; */
+    animation-name: animakotak;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.container:hover .kotak {
+    animation-play-state: paused;
+}
+
+@keyframes animakotak {
+    0% {
+        margin-left: 0px;
+    }
+    20% {
+        background-color: burlywood;
+    }
+    40% {
+        background-color: crimson;
+    }
+    60% {
+        background-color: yellow;
+    }
+    80% {
+        background-color: turquoise;
+    }
+    100% {
+        margin-left: 300px;
+        background-color: springgreen;
+    }
 }
